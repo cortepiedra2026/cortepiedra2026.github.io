@@ -1,128 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Corte Piedra</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corte Piedra | Menú</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header>
-  <img src="assets/logo.png" class="logo">
-  <h1>Restaurante Corte Piedra</h1>
-</header>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <h1>CORTE PIEDRA</h1>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-  <button onclick="showSection('entradas')">Entradas</button>
-  <button onclick="showSection('cortes')">Cortes</button>
-  <button onclick="showSection('lomo')">Lomo</button>
-  <button onclick="showSection('picadas')">Picadas</button>
-  <button onclick="showSection('hamburguesas')">Hamburguesas</button>
-  <button onclick="showSection('pizza')">Pizza</button>
-  <button onclick="showSection('mariscos')">Mariscos</button>
-  <button onclick="showSection('bebidas')">Bebidas</button>
-</nav>
+    <!-- HERO / VIDEO -->
+    <section id="inicio" class="hero">
+        <video autoplay muted loop>
+            <source src="assets/video.mp4" type="video/mp4">
+        </video>
 
-<main>
+        <div class="hero-text">
+            <h2>Bienvenido a Corte Piedra</h2>
+            <p>El verdadero sabor de la buena cocina</p>
+            <a href="#menu" class="btn">Ver Menú</a>
+        </div>
+    </section>
 
-<!-- ENTRADAS -->
-<section id="entradas" class="menu-section active">
-  <h2>Entradas</h2>
-  <ul>
-    <li>Madurito con queso y salprieta - $3.00</li>
-    <li>Tuétano con camarón - $8.00</li>
-    <li>Nachos con lomo fino - $9.00</li>
-    <li>Nachos con pollo - $9.00</li>
-  </ul>
-</section>
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="about">
+        <h2>Nuestra Historia</h2>
+        <p>
+            En Corte Piedra, cada experiencia nace alrededor de una buena mesa.
+            Desde junio de 2024 ofrecemos cortes premium de res y cerdo,
+            celebrando el verdadero sabor de la buena cocina.
+        </p>
+    </section>
 
-<!-- CORTES -->
-<section id="cortes" class="menu-section">
-  <h2>Cortes</h2>
-  <ul>
-    <li>Costilla ahumada - $18.00</li>
-    <li>Baby ribs - $16.00</li>
-    <li>Bondiola - $16.00</li>
-    <li>Cowboy - $16.00</li>
-    <li>Matambre - $16.00</li>
-    <li>Matambre pizza - $18.00</li>
-    <li>Chistorra pizza - $16.00</li>
-    <li>New York - $20.00</li>
-    <li>Bife chorizo - $18.00</li>
-    <li>Rib Eye - $18.00</li>
-    <li>Tomahawk - $20.00</li>
-  </ul>
-</section>
+    <!-- MENÚ PRINCIPAL -->
+    <section id="menu" class="menu">
+        <h2>Nuestro Menú</h2>
 
-<!-- LOMO -->
-<section id="lomo" class="menu-section">
-  <h2>Lomo Fino</h2>
-  <ul>
-    <li>Lomo en salsa vino tinto - $15.00</li>
-    <li>Lomo en salsa de tocino - $15.00</li>
-    <li>Lomo en salsa de camarón - $16.00</li>
-    <li>Filet mignon champiñones - $15.00</li>
-    <li>Lomo chimichurri - $13.50</li>
-  </ul>
-</section>
+        <div class="menu-grid">
 
-<!-- PICADAS -->
-<section id="picadas" class="menu-section">
-  <h2>Picaditas</h2>
-  <ul>
-    <li>Picadita Corte Piedra - $16.00</li>
-    <li>Picadita Mixta - $24.00</li>
-  </ul>
-</section>
+            <div class="card">
+                <h3>Entradas</h3>
+                <p>Morcilla, chorizo, longaniza, empanadas...</p>
+                <button onclick="verCategoria('entradas')">Ver más</button>
+            </div>
 
-<!-- HAMBURGUESAS -->
-<section id="hamburguesas" class="menu-section">
-  <h2>Hamburguesas</h2>
-  <ul>
-    <li>Hamburguesa Americana - $6.00</li>
-    <li>Hamburguesa Corte Piedra - $9.00</li>
-  </ul>
-</section>
+            <div class="card">
+                <h3>Cortes</h3>
+                <p>Rib-eye, tomahawk, picaña, biffe chorizo...</p>
+                <button onclick="verCategoria('cortes')">Ver más</button>
+            </div>
 
-<!-- PIZZA -->
-<section id="pizza" class="menu-section">
-  <h2>Pizza Artesanal</h2>
-  <ul>
-    <li>Pizza de embutidos - $8.00</li>
-    <li>Pizza bolognesa - $10.00</li>
-  </ul>
-</section>
+            <div class="card">
+                <h3>Picaditas</h3>
+                <p>La especialidad de la casa</p>
+                <button onclick="verCategoria('picaditas')">Ver más</button>
+            </div>
 
-<!-- MARISCOS -->
-<section id="mariscos" class="menu-section">
-  <h2>Mariscos</h2>
-  <ul>
-    <li>Ceviche peruano - $7.50</li>
-    <li>Ceviche camarón - $8.50</li>
-    <li>Ceviche mixto - $10.00</li>
-    <li>Arroz con camarón - $9.00</li>
-    <li>Arroz marinero - $12.00</li>
-    <li>Corvina en salsa camarón - $13.50</li>
-    <li>Salmón en salsa naranja - $15.00</li>
-  </ul>
-</section>
+            <div class="card">
+                <h3>Mariscos</h3>
+                <p>Ceviches, arroces y más</p>
+                <button onclick="verCategoria('mariscos')">Ver más</button>
+            </div>
 
-<!-- BEBIDAS -->
-<section id="bebidas" class="menu-section">
-  <h2>Bebidas</h2>
-  <ul>
-    <li>Café - $1.00</li>
-    <li>Jugos - desde $1.50</li>
-    <li>Limonadas - desde $1.50</li>
-    <li>Milkshake - $4.50</li>
-    <li>Mojitos - desde $4.50</li>
-    <li>Cerveza - desde $2.00</li>
-  </ul>
-</section>
+            <div class="card">
+                <h3>Bebidas</h3>
+                <p>Jugos, cócteles, cervezas</p>
+                <button onclick="verCategoria('bebidas')">Ver más</button>
+            </div>
 
-</main>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Corte Piedra - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
