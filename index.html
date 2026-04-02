@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Corte Piedra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="assets/logo.png" class="logo">
+  <h1>Restaurante Corte Piedra</h1>
+</header>
+
+<nav>
+  <button onclick="showSection('entradas')">Entradas</button>
+  <button onclick="showSection('cortes')">Cortes</button>
+  <button onclick="showSection('lomo')">Lomo</button>
+  <button onclick="showSection('picadas')">Picadas</button>
+  <button onclick="showSection('hamburguesas')">Hamburguesas</button>
+  <button onclick="showSection('pizza')">Pizza</button>
+  <button onclick="showSection('mariscos')">Mariscos</button>
+  <button onclick="showSection('bebidas')">Bebidas</button>
+</nav>
+
+<main>
+
+<!-- ENTRADAS -->
+<section id="entradas" class="menu-section active">
+  <h2>Entradas</h2>
+  <ul>
+    <li>Madurito con queso y salprieta - $3.00</li>
+    <li>Tuétano con camarón - $8.00</li>
+    <li>Nachos con lomo fino - $9.00</li>
+    <li>Nachos con pollo - $9.00</li>
+  </ul>
+</section>
+
+<!-- CORTES -->
+<section id="cortes" class="menu-section">
+  <h2>Cortes</h2>
+  <ul>
+    <li>Costilla ahumada - $18.00</li>
+    <li>Baby ribs - $16.00</li>
+    <li>Bondiola - $16.00</li>
+    <li>Cowboy - $16.00</li>
+    <li>Matambre - $16.00</li>
+    <li>Matambre pizza - $18.00</li>
+    <li>Chistorra pizza - $16.00</li>
+    <li>New York - $20.00</li>
+    <li>Bife chorizo - $18.00</li>
+    <li>Rib Eye - $18.00</li>
+    <li>Tomahawk - $20.00</li>
+  </ul>
+</section>
+
+<!-- LOMO -->
+<section id="lomo" class="menu-section">
+  <h2>Lomo Fino</h2>
+  <ul>
+    <li>Lomo en salsa vino tinto - $15.00</li>
+    <li>Lomo en salsa de tocino - $15.00</li>
+    <li>Lomo en salsa de camarón - $16.00</li>
+    <li>Filet mignon champiñones - $15.00</li>
+    <li>Lomo chimichurri - $13.50</li>
+  </ul>
+</section>
+
+<!-- PICADAS -->
+<section id="picadas" class="menu-section">
+  <h2>Picaditas</h2>
+  <ul>
+    <li>Picadita Corte Piedra - $16.00</li>
+    <li>Picadita Mixta - $24.00</li>
+  </ul>
+</section>
+
+<!-- HAMBURGUESAS -->
+<section id="hamburguesas" class="menu-section">
+  <h2>Hamburguesas</h2>
+  <ul>
+    <li>Hamburguesa Americana - $6.00</li>
+    <li>Hamburguesa Corte Piedra - $9.00</li>
+  </ul>
+</section>
+
+<!-- PIZZA -->
+<section id="pizza" class="menu-section">
+  <h2>Pizza Artesanal</h2>
+  <ul>
+    <li>Pizza de embutidos - $8.00</li>
+    <li>Pizza bolognesa - $10.00</li>
+  </ul>
+</section>
+
+<!-- MARISCOS -->
+<section id="mariscos" class="menu-section">
+  <h2>Mariscos</h2>
+  <ul>
+    <li>Ceviche peruano - $7.50</li>
+    <li>Ceviche camarón - $8.50</li>
+    <li>Ceviche mixto - $10.00</li>
+    <li>Arroz con camarón - $9.00</li>
+    <li>Arroz marinero - $12.00</li>
+    <li>Corvina en salsa camarón - $13.50</li>
+    <li>Salmón en salsa naranja - $15.00</li>
+  </ul>
+</section>
+
+<!-- BEBIDAS -->
+<section id="bebidas" class="menu-section">
+  <h2>Bebidas</h2>
+  <ul>
+    <li>Café - $1.00</li>
+    <li>Jugos - desde $1.50</li>
+    <li>Limonadas - desde $1.50</li>
+    <li>Milkshake - $4.50</li>
+    <li>Mojitos - desde $4.50</li>
+    <li>Cerveza - desde $2.00</li>
+  </ul>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
